@@ -95,7 +95,7 @@ void setup() {
   Serial.println("Connecting to WiFi");
 
   WiFi.mode(WIFI_STA);
-  WiFi.begin(SSID, PASSWD);
+  WiFi.begin(SSID, PASSWORD);
   int retries = 0;
   while ((WiFi.status() != WL_CONNECTED) && (retries < 10)) {
     retries++;
